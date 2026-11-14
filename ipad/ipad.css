@@ -1,0 +1,14 @@
+/* This stylesheet is included only by the generated iPad website. */
+html, body { overscroll-behavior: none; }
+body #webBar, body .web-pill.web-only, body .get-app { display: none !important; }
+.ipad-info { padding: 14px; border-radius: 16px; background: var(--panel, #fff); }
+.ipad-info p { font-size: 14px; line-height: 1.5; }
+.ipad-info button { min-height: 44px; }
+.ipad-status { font-size: 13px; line-height: 1.5; }
+@media (pointer: coarse) {
+  input, textarea, select { font-size: max(16px, 1em); }
+  .side .mini, .sh-x, .home-close, .set-btn { min-width: 44px; min-height: 44px; }
+  .side { padding-top: env(safe-area-inset-top, 0px); }
+  .dock { padding-bottom: env(safe-area-inset-bottom, 0px); }
+  .stage { touch-action: none; }
+}
